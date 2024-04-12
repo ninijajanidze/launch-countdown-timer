@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 375px;
+    height: 667px;
+    padding: 142px 24px 233px;
+    background-image: url(images/bg-stars.svg),
+     linear-gradient(to bottom, #1d1e28 0%, #261c2d 95%, #261a2d 100%);
+    background-repeat: no-repeat;
+}
+
+h1 {
+    width: 327px;
+    height: 48px;
+    margin: 0 0 54px;
+    font-family: Red Hat Text;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 6.14px;
+    text-align: center;
+    line-height: 26px;
+    color: #fff;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    width: 70px;
+    height: 71px;
+    border-radius: 4px;
+    background-color: #161414;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+    height: 66.3px;
+    border-radius: 4px;
+    background-color: #343650;
+    position: relative;
+    overflow: hidden;
+}
+
+p {
+    width: 48px;
+    height: 38px;
+    margin: 0;
+    font-family: Red Hat Text;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.97;
+    letter-spacing: -1.08px;
+    text-align: center;
+    color: #fb5e84;    
+    position: absolute;
+}
+
+.box {
+    width: 70px;
+    height: 33px;
+    opacity: 0.15;
+    background-color: #000;      
+    position: absolute;
+}
+
+.oval-left {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 30px 70px 0 0;
+    background-color: #191a23;   
+    position: absolute;
+}
+
+.oval-right {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 30px 0 0 70px;
+    background-color: #191a23;   
+    position: absolute;
+}
+
+.line {
+    width: 70px;
+    height: 0.5px;
+    margin: 32.8px 0 18.8px;
+    opacity: 0.25;
+    background-color: #000;     
+}
+
+h2 {
+    height: 12px;
+    margin: 14px 0 0;
+    font-family: Red Hat Text;
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 2.96px;
+    text-align: center;
+    color: #8385a9;
+}
+
+.footer {
+    width: 375px;
+    height: 168px;
+    margin-top: 569px;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 96px 120px 48px;
+    background-image: url(images/pattern-hills.svg);
+    background-size: cover;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+@media  screen and (min-width:1440px) {
+    .container {
+        width: 1440px;
+        height: 820px;
+        padding: 132px 376px 0;
+    }
+    
+    h1 {
+        width: 450px;
+        height: 29px;
+        margin: auto;
+        margin-bottom: 104px;
+        font-size: 22px;
+        letter-spacing: 7.5px;
+        line-height: 26px; 
+    }
+    
+    .timer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .wrapper {
+        width: 148px;
+        height: 150px;
+        border-radius: 8px;
+        background-color: #161414;  
+    }
+
+    .content {
+        width: 148px;
+        height: 140px;
+        border-radius: 8px;
+    }
+    
+    p {
+        width: 110px;
+        height: 71px;
+        font-size: 80px;
+        line-height: 71px;
+        letter-spacing: -2.4px;
+        margin: 30px 20px;
+    }
+    
+    .box {
+        width: 148px;
+        height: 70px;
+    }
+    
+    .oval-left {
+        width: 12px;
+        height: 12px;
+        margin: 63px 148px 0 0;
+    }
+    
+    .oval-right {
+        width: 12px;
+        height: 12px;
+        margin: 63px 0 0 148px;
+    }
+    
+    .line {
+        width: 148px;
+        height: 1px;
+        margin: 70px 0 34px; 
+    }
+    
+    h2 {
+        height: 18px;
+        margin: 26px 0 0;
+        font-size: 14px;
+        letter-spacing: 5.92px;
+    }
+    
+    .footer {
+        width: 1440px;
+        height: 196px;
+        margin-top: 624px;
+        padding: 100px 652px 72px;
+    }
+    
+    .icon {
+        cursor: pointer;
+    }
+
+    .icon:hover {
+        filter: invert(57%) sepia(62%) saturate(3083%) hue-rotate(310deg) brightness(99%) contrast(100%);
+    }
+}
